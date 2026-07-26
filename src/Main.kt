@@ -88,9 +88,88 @@ fun main() {
 
                 if (opcionProducto == "1") {
                     println("ingrese la nueva cantidad del producto: ")
-                    var
-                }
+                    var cantidadProducto1 = readln().toIntOrNull()
 
+                    if (cantidadProducto1 == null || cantidadProducto1 < 0 || cantidadProducto1 > 100) {
+                        println("cantidad invalida")
+                    } else {
+                        cantidadP1 = cantidadProducto1
+                        println("cantidad disponible: $cantidadP1")
+
+                        if (cantidadProducto1 == 0) {
+                            p1Disponible = false
+                        } else {
+                            p1Disponible = true
+                        }
+                    }
+                } else if(opcionProducto == "2") {
+                    println("ingrese la nueva cantidad del producto: ")
+                    var cantidadProducto2 = readln().toIntOrNull()
+
+                    if (cantidadProducto2 == null || cantidadProducto2 < 0 || cantidadProducto2 > 100) {
+                        println("cantidad invalida")
+                    } else {
+                        cantidadP2 = cantidadProducto2
+                        println("cantidad disponible: $cantidadP2")
+
+                        if (cantidadProducto2 == 0) {
+                            p2Disponible = false
+                        } else {
+                            p2Disponible = true
+                        }
+                    }
+                } else if (opcionProducto == "3") {
+                    println("ingrese la nueva cantidad del producto: ")
+                    var cantidadProducto3 = readln().toIntOrNull()
+
+                    if (cantidadProducto3 == null || cantidadProducto3 < 0 || cantidadProducto3 > 100) {
+                        println("cantidad invalida")
+                    } else {
+                        cantidadP3 = cantidadProducto3
+                        println("cantidad disponible: $cantidadP3")
+
+                        if (cantidadProducto3 == 0) {
+                            p3Disponible = false
+                        } else {
+                            p3Disponible = true
+                        }
+                    }
+                } else if (opcionProducto == "4") {
+                    println("ingrese la nueva cantidad del producto: ")
+                    var cantidadProducto4 = readln().toIntOrNull()
+
+                    if (cantidadProducto4 == null || cantidadProducto4 < 0 || cantidadProducto4 > 100) {
+                        println("cantidad invalida")
+                    } else {
+                        cantidadP4 = cantidadProducto4
+                        println("cantidad disponible: $cantidadP4")
+
+                        if (cantidadProducto4 == 0) {
+                            p4Disponible = false
+                        } else {
+                            p4Disponible = true
+                        }
+                    }
+                } else if (opcionProducto == "5") {
+                    println("ingrese la nueva cantidad del producto: ")
+                    var cantidadProducto5 = readln().toIntOrNull()
+
+                    if (cantidadProducto5 == null || cantidadProducto5 < 0 || cantidadProducto5 > 100) {
+                        println("cantidad invalida")
+                    } else {
+                        cantidadP5 = cantidadProducto5
+                        println("cantidad disponible: $cantidadP5")
+
+                        if (cantidadProducto5 == 0) {
+                            p5Disponible = false
+                        } else {
+                            p5Disponible = true
+                        }
+                    }
+                } else {
+                    println("no ingreso un producto valido")
+                }
+                println()
             }
         }
     } while (opcion != "5")
