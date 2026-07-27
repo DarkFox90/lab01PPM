@@ -194,6 +194,7 @@ fun main() {
                 println("hay un total de $sumaProductos productos")
             }
         }
+        println()
     } while (opcion != "5")
     println("gracias por usar el programa")
 }
