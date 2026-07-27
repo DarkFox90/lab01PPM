@@ -171,6 +171,28 @@ fun main() {
                 }
                 println()
             }
+            "4" -> {
+                var contador = 0
+                if (p1Disponible) {
+                    contador++
+                }
+                if (p2Disponible) {
+                    contador++
+                }
+                if (p3Disponible) {
+                    contador++
+                }
+                if (p4Disponible) {
+                    contador++
+                }
+                if (p5Disponible) {
+                    contador++
+                }
+                println("hay: $contador productos disponibles")
+
+                var sumaProductos = cantidadP1 + cantidadP2 + cantidadP3 + cantidadP4 + cantidadP5
+                println("hay un total de $sumaProductos productos")
+            }
         }
     } while (opcion != "5")
     println("gracias por usar el programa")
