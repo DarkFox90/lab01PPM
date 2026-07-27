@@ -98,7 +98,7 @@ fun main() {
                     seleccione un producto: 
                 """.trimIndent()
                 )
-                var opcionProducto = readln().lowercase()
+                var opcionProducto = readln().lowercase().trim()
 
                 if (opcionProducto == "1") {
                     println("ingrese la nueva cantidad del producto: ")
