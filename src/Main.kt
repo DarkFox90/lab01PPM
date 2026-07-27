@@ -29,45 +29,57 @@ fun main() {
         println("5. Salir")
 
         print("Seleccione una opcion: ")
-        opcion = readln()
+        opcion = readln().trim()
 
         when (opcion) {
             "1" -> {
-                println( """
+                println(
+                    """
                   producto 1: $producto1, cantidad: $cantidadP1, disponibilidad: $p1Disponible
                   producto 2: $producto2, cantidad: $cantidadP2, disponibilidad: $p2Disponible
                   producto 3: $producto3, cantidad: $cantidadP3, disponibilidad:$p3Disponible
                   producto 4: $producto4, cantidad: $cantidadP4, disponibilidad:$p4Disponible
                   producto 5: $producto5, cantidad: $cantidadP5, disponibilidad:$p5Disponible
-              """.trimIndent())
+              """.trimIndent()
+                )
                 println()
             }
 
             "2" -> {
                 println("ingresa el nombre del producto: ")
-                var nombreProducto = readln().lowercase()
+                var nombreProducto = readln().lowercase().trim()
 
 
                 if (nombreProducto == producto1) {
-                    println("""
+                    println(
+                        """
                         cantidad: $cantidadP1, disponibilidad: $p1Disponible
-                    """.trimIndent())
+                    """.trimIndent()
+                    )
                 } else if (nombreProducto == producto2) {
-                    println("""
+                    println(
+                        """
                         cantidad: $cantidadP2, disponibilidad: $p2Disponible
-                    """.trimIndent())
+                    """.trimIndent()
+                    )
                 } else if (nombreProducto == producto3) {
-                    println("""
+                    println(
+                        """
                         cantidad: $cantidadP3, disponibilidad: $p3Disponible
-                    """.trimIndent())
+                    """.trimIndent()
+                    )
                 } else if (nombreProducto == producto4) {
-                    println("""
+                    println(
+                        """
                         cantidad: $cantidadP4, disponibilidad: $p4Disponible
-                    """.trimIndent())
+                    """.trimIndent()
+                    )
                 } else if (nombreProducto == producto5) {
-                    println("""
+                    println(
+                        """
                         cantidad: $cantidadP5, disponibilidad: $p5Disponible
-                    """.trimIndent())
+                    """.trimIndent()
+                    )
                 } else {
                     println("producto invalido")
                 }
@@ -75,7 +87,8 @@ fun main() {
             }
 
             "3" -> {
-                println("""
+                println(
+                    """
                     1. sueter
                     2. shampoo
                     3. pachon
@@ -83,7 +96,8 @@ fun main() {
                     5. cepillo
                     
                     seleccione un producto: 
-                """.trimIndent())
+                """.trimIndent()
+                )
                 var opcionProducto = readln().lowercase()
 
                 if (opcionProducto == "1") {
@@ -102,7 +116,7 @@ fun main() {
                             p1Disponible = true
                         }
                     }
-                } else if(opcionProducto == "2") {
+                } else if (opcionProducto == "2") {
                     println("ingrese la nueva cantidad del producto: ")
                     var cantidadProducto2 = readln().toIntOrNull()
 
@@ -171,6 +185,7 @@ fun main() {
                 }
                 println()
             }
+
             "4" -> {
                 var contador = 0
                 if (p1Disponible) {
@@ -192,9 +207,9 @@ fun main() {
 
                 var sumaProductos = cantidadP1 + cantidadP2 + cantidadP3 + cantidadP4 + cantidadP5
                 println("hay un total de $sumaProductos productos")
+                println()
             }
         }
-        println()
     } while (opcion != "5")
     println("gracias por usar el programa")
 }
